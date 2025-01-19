@@ -1,0 +1,147 @@
+main .container{
+  max-width: 1200px;
+  color: var(--white);
+  padding: 1rem 2rem;
+  margin: 0 auto;
+}
+
+main .hero{
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+  width: 100%;
+  height: 600px;
+}
+
+main .hero img{
+  width: 500px;
+  object-fit: cover;
+  animation-name: gerakPelan;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease;
+  animation-direction: alternate;
+}
+
+@keyframes gerakPelan{
+  form{
+    transform: rotate(-10deg);
+  }
+  to{
+    transform: rotate(10deg);
+  }
+}
+
+main .hero-text{
+  width: 100%;
+}
+
+main .hero-text h1{
+  font-size: 2.3rem;
+  margin-bottom: 1rem;
+}
+
+main .hero-text h1 span{
+  color: var(--primary);
+}
+
+main .hero-text p{
+  text-align: justify;
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+  line-height: 1.5;
+}
+
+
+
+
+main .produk{
+  margin-top: 300px;
+}
+main .produk h1{
+  text-align: center;
+  margin-bottom: 80px;
+}
+main .card-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+main .card-container .card{
+  width: 330px;
+  height: 550px;
+  border-radius: 0.5rem;
+  background-color: var(--bg-color2);
+  border: 2px solid transparent;
+  transition: all 300ms ease;
+}
+
+main .card-container .card:hover{
+  box-shadow: var(--box-shadow);
+  border-color: var(--primary-cover);
+  transform: translateY(-10px);
+}
+
+main .card-container .card img{
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+  border-radius: 0.5rem 0.5rem 0 0;
+}
+
+main .card-container .card .card-text{
+  height: 200px;
+  padding: 1rem 0.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+main .card-container .card .card-text > p{
+  font-size: 0.8rem;
+}
+
+main .card-container .card .card-text .membeli .harga{
+  background-color: var(--black);
+  margin-bottom: 5px;
+  width: fit-content;
+  color: var(--primary);
+}
+
+main .tentang-kami{
+  margin-top: 150px;
+}
+
+main .tentang-kami h1{
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+main .tentang-kami .about-content{
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  background-color: var(--bg-color2);
+  padding: 5rem 2rem;
+}
+
+main .tentang-kami .about-content img{
+  flex: 1;
+  width: 100px;
+}
+
+main .tentang-kami .about-content .about-text{
+  flex: 3;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+main .tentang-kami .about-content .about-text p{
+  text-align: justify;
+}

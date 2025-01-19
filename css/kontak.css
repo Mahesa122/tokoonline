@@ -1,0 +1,45 @@
+main {
+    margin: 200px 0;
+}
+
+main .container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem 2rem;
+}
+
+main h1{
+    text-align: center;
+    margin-bottom: 50px;
+    color: var(--white);
+}
+
+main form{
+    display: flex;
+    flex-direction: column;
+    color: var(--white);
+    width: 60%;
+    gap: 30px;
+    margin: 0 auto;
+}
+
+main form .box-lain{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+main form .box-lain label{
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+
+main form .box-lain input{
+    height: 30px;
+    font-weight: 1.5rem;
+}
+
+main form .box-lain textarea{
+    height: 200px;
+}

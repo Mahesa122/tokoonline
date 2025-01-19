@@ -1,0 +1,138 @@
+@media only screen and (max-width: 768px) {
+  header .container{
+    padding: 1rem;
+  }
+  header .navigasi{
+    display: none;
+  }
+  header .burger-menu{
+    display: block;
+  }
+  header .aside{
+    display: block;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: var(--bg-color2);
+    padding: 1rem;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: all 300ms ease;
+    z-index: 9999;
+  }
+  header .aside.aside-active{
+    transform: scaleX(1);
+    overflow: hidden;
+  }
+  header .aside .brand{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  header .aside .brand .x-menu{
+    color: var(--white);
+    transition: 200ms ease;
+    cursor: pointer;
+  }
+  header .aside .brand .x-menu:hover{
+    color: var(--primary);
+  }
+  header .aside .aside-nav{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    list-style-type: none;
+    padding: 2rem 0;
+    gap: 20px;
+  }
+  header .aside .aside-nav li{
+    display: flex;
+    align-items: center;
+    width: 100%;
+  }
+  header .aside .aside-nav li .aside-icons{
+    margin-right: 10px;
+    color: var(--primary);
+  }
+  header .aside .aside-nav li a{
+    font-size: 1.3rem;
+    position: relative;
+    text-decoration: none;
+    color: var(--white);
+    width: 100%;
+  }
+  header .aside .aside-nav li a::after{
+    content: '';
+    width: 100%;
+    position: absolute;
+    bottom: -5px;
+    height: 3px;
+    background-color: var(--primary);
+    left: 0;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: all 300ms ease;
+  }
+  
+  header .aside .aside-nav li a:hover::after{
+    transform: scaleX(1);
+  }
+  
+  
+
+  .main-home .container{
+    padding: 1rem;
+  }
+  .main-home{
+    margin-top: 210px;
+  }
+  .main-home .hero{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .main-home .hero img{
+    width: 90%;
+  }
+  .main-home .hero .hero-text{
+    text-align: center;
+  }
+  .main-home .hero .hero-text p{
+    max-width: 650px;
+    margin: 0 auto 2rem auto;
+    text-align: justify;
+  }
+  main .tentang-kami .about-content{
+    flex-direction: column;
+    padding: 1rem;
+  }
+  main .tentang-kami .about-content .about-text .cta{
+    text-align: center;
+  }
+
+
+
+
+
+
+  .main-kontak form{
+    width: 100%;
+  }
+
+
+
+
+
+
+  
+
+
+
+
+
+  footer .container{
+    flex-direction: column;
+  }
+}
